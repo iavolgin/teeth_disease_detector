@@ -2,7 +2,7 @@ import os
 import numpy as np
 from ultralytics import YOLO
 
-_weights_path = os.path.join(os.path.dirname(__file__), 'weights', 'best.pt')
+_weights_path = os.path.join(os.path.dirname(__file__), 'weights', 'detector', 'best.pt')
 _model = YOLO(_weights_path)
 
 def detect_teeth(image: np.ndarray) -> list:
